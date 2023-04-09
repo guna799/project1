@@ -9,6 +9,10 @@
  
   height:800px;
   }
+  .scroll {
+    height: 200px; /* set the height of the div */
+    overflow-y: scroll; /* add vertical scrollbar */
+  }
   .logo{
     background-image:url("https:///encrypted-tbn0.gstatic.com//images?q=tbn:ANd9GcRnDKqJbAPBqSZ4ErRrubtRhzZT9bhiFGSkc5Tei2VvnVO96IqMD2pXtBfHbavGBPLGFg&usqp=CAU");
     background-repeat:no-repeat;
@@ -16,11 +20,11 @@
     background-size:cover;
     overflow: hidden;
     height: 200px;
-    width: 350px;
+    width: 376px;
     border-radius: 10px;
   }
   .title{
-   width:350px;
+   width:380px;
    height:710px;
   background-color:white;
   color:black;
@@ -76,10 +80,31 @@
     background-color: rgba(213, 232, 250, 0.747);   
   outline: none;
 }
-.input12 .qa:focus {
-  border-color: rgb(111, 111, 233); /* border color when input is focused */
+.input12 .qs{
+      
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  width: 75%;
+  height: 35px;
+  padding: 10px;
+  background-color: rgba(213, 232, 250, 0.747);   
+outline: none;
+}
+.input12 .qd{
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  height: 35px;
+  padding: 1px;
+  background-color: rgba(213, 232, 250, 0.747);   
+outline: none;
 }
 
+.input12 .qa,.qs:focus {
+  border-color: rgb(111, 111, 233); /* border color when input is focused */
+}
+.input12 .qd:focus {
+  border-color: rgb(111, 111, 233); /* border color when input is focused */
+}
 
   .workflow{
     outline:none;
