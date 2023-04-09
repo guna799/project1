@@ -1,1 +1,62 @@
+<html>
+<head>
+<title>Registration Form </title>
+<link rel="stylesheet" href="phase1.css">
+</head>
+<body >
+  <form  class="qwe" id="form">
+  <div class="title">
 
+
+<h2 >Register Here</h2><br>
+
+<div class="input12">
+<label for="username">Name:<span class="star">*</span></label><br>
+<input type="text" placeholder=username id="username" class="q" >
+<p class="color">error message</p> 
+ </div>
+ 
+ <div class="input12">
+<label for="email">Email:<span class="star">*</span></label><br>
+<input type="email" placeholder="abc@gmail.com" id="email" class="q">
+<p class="color">error message</p> 
+ </div>
+
+  <div class="input12">
+  
+<label for="phonenumber">Phone Number:<span class="star">*</span></label>
+<input type="text" placeholder="phone number" id="phone" class="q" maxlength="10">
+<p class="color">error message</p> 
+ </div>
+
+    <div class="input12">
+    <label for="Subject">Subject:<span class="star">*</span></label>
+    <input type="text" placeholder="Subject" id="Subject" class="q">
+    <p class="color">error message</p> 
+     </div><br>
+
+     <div  class="input12">
+        <label for="workflow">Select Workflow:<span class="star">*</span></label>
+        <select class="workflow" name="workflow" required >
+          <option value="">--  Please Select  --</option>
+          <option value="assign">Assign Reviews</option>
+          <option value="approve">Approve Reviews</option>
+          <option value="delegate">Delegate Reviews</option>
+        </select>
+        </div><br>
+
+     <div class="input12">
+        <label >Comments:<span class="star">*</span></label>
+        <textarea placeholder="Comments......" rows="2" cols="18" id="textarea" class="qa" maxlength="150"></textarea>
+        <p class="color">error message</p>
+      </div><br>
+        
+    
+
+<button type="submit" id="submit" class="submit1" >Submit</button>
+<script src="phase1.js"></script>
+
+</div>
+</form>
+</body>
+</html>
