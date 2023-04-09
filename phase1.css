@@ -2,16 +2,26 @@
 *{margin:0;
     padding:0;}
   body{
-    background-image:url("C:\\Users\\riyazm\\Pictures\\Saved Pictures\\wp9764014 (2).jpg");
+    background-image:url("https://cdn.pixabay.com/photo/2016/04/20/07/17/logo-1340517_1280.png");
   background-repeat:no-repeat;
   background-position:center center;
   background-size:cover;
-  overflow: hidden;
-  
+ 
+  height:800px;
+  }
+  .logo{
+    background-image:url("https:///encrypted-tbn0.gstatic.com//images?q=tbn:ANd9GcRnDKqJbAPBqSZ4ErRrubtRhzZT9bhiFGSkc5Tei2VvnVO96IqMD2pXtBfHbavGBPLGFg&usqp=CAU");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    overflow: hidden;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
   }
   .title{
    width:350px;
-   height:520px;
+   height:710px;
   background-color:white;
   color:black;
   margin:10px 800px 0px 700px;
