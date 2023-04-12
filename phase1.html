@@ -8,17 +8,17 @@
   <div class="title" >
 <div class="logo"></div>
 
-<h2 >Register Here</h2><br>
+<h2 >Register Here:</h2><br>
 
 <div class="input12">
-<label for="username">Name:<span class="star">*</span></label><br>
-<input type="text" placeholder=username id="username" class="q" >
+<label for="Name">Name:<span class="star">*</span></label><br>
+<input type="text" placeholder="Please enter your name" id="username" class="q" onchange="validate()">
 <p class="color">error message</p> 
  </div>
  
  <div class="input12">
 <label for="email">Email:<span class="star">*</span></label><br>
-<input type="email" placeholder="abc@gmail.com" id="email" class="q">
+<input type="email1" placeholder="Please enter your Email" id="email" class="q" onchange="validate()">
 <p class="color">error message</p> 
  </div>
 
@@ -26,24 +26,24 @@
   
 <label for="phonenumber">Phone Number:<span class="star">*</span><br>
 <select class="qd" name="phone-country-code">
-  <option value="1">(+1)</option>
-  <option value="1">(+91)</option>
+  <option value="1">+1</option>
+  <option value="1">+91</option>
 </select>
 </label>
-<input type="text" placeholder="phone number" id="phone" class="qs" maxlength="10">
+<input type="text" placeholder="Please enter your phonenumber" id="phone" class="qs" maxlength="10" onchange="validate()">
 <p class="color">error message</p> 
  </div>
 
     <div class="input12">
     <label for="Subject">Subject:<span class="star">*</span></label>
-    <input type="text" placeholder="Subject" id="Subject" class="q">
+    <input type="text" placeholder="Please enter the Subject" id="Subject" class="q" maxlength="50" onchange="validate()">
     <p class="color">error message</p> 
-     </div><br>
+     </div>
 
      <div  class="input12">
-        <label for="workflow">Select Workflow:<span class="star">*</span></label>
+        <label for="workflow">Select Workflow:<span class="star">*</span></label><br>
         <select class="workflow" name="workflow" required >
-          <option value="">--  Please Select  --</option>
+          <option value="">--  Please Select workflow  --</option>
           <option value="assign">Assign Reviews</option>
           <option value="approve">Approve Reviews</option>
           <option value="delegate">Delegate Reviews</option>
@@ -52,7 +52,7 @@
 
      <div class="input12">
         <label >Comments:<span class="star">*</span></label>
-        <textarea placeholder="Comments......" rows="2" cols="18" id="textarea" class="qa" maxlength="150"></textarea>
+        <textarea placeholder="Please enter your Comments" rows="2" cols="18" id="textarea" class="qa" maxlength="150" onchange="validate()"></textarea>
         <p class="color">error message</p>
       </div><br>
         

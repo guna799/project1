@@ -15,6 +15,10 @@ form.addEventListener("submit", function(event){
     validate();
 	
 });
+form.addEventListener('onchange',function(event){
+     event.preventDefault();
+     validate();
+    });
 
 function validate()
 {
@@ -24,15 +28,15 @@ function validate()
    let SubjectValue = Subject.value.trim()
    let textareaValue = textarea.value.trim()
    let selectedOption = selectElement.options[selectElement.selectedIndex];
-   const code = /^[a-zA-Z ]+$/;
+   const code = /^[a-zA-Z0-9 ]+$/;
    const codea = /^[0-9]+$/;
     //User name check
 
     if(nameValue==='' ){
         setError(username,'User name cannot be empty.')
     }
-    else if(nameValue.length<3){
-        setError(username,'User name should be minimum 3 characters.')
+    else if(nameValue.length<5){
+        setError(username,'User name should be minimum 5 characters.')
     }
     else if(!code.test(nameValue)){
 
@@ -124,6 +128,7 @@ selectedOption:selectedOption.value,
 Subject:SubjectValue,
 Comment:textareaValue,
 };
+userData=[]; 
 userData.push(user);		
 
 console.log(userData);
